@@ -1,0 +1,10 @@
+// background mixin style
+@mixin background($bg-img: url("https://render.fineartamerica.com/images/rendered/default/greeting-card/images-medium-5/1-arcade-game-with-illuminated-screen-allan-swart.jpg?&targetx=-180&targety=0&imagewidth=1060&imageheight=500&modelwidth=700&modelheight=500&backgroundcolor=FBFDFB&orientation=0"), $bg-repeat: no-repeat, $bg-color: #5577ee, $bg-position: center, $bg-size: cover) {
+	background: {
+		image: $bg-img;
+		repeat: $bg-repeat;
+		color: $bg-color; 
+		position: $bg-position;
+		size: $bg-size;
+	}
+}	

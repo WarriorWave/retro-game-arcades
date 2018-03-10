@@ -1,0 +1,38 @@
+/* bg presentation*/
+#bg-services .services-row, #bg-maps .map {
+  margin-top: 8%; }
+
+/*
+* LANDING
+*/
+.jumbotron {
+  margin-bottom: 0;
+  height: 100vh;
+  background-image: url("https://render.fineartamerica.com/images/rendered/default/greeting-card/images-medium-5/1-arcade-game-with-illuminated-screen-allan-swart.jpg?&targetx=-180&targety=0&imagewidth=1060&imageheight=500&modelwidth=700&modelheight=500&backgroundcolor=FBFDFB&orientation=0");
+  background-repeat: no-repeat;
+  background-color: #5577ee;
+  background-position: center;
+  background-size: cover; }
+  .jumbotron .container {
+    color: gray; }
+    .jumbotron .container .presentation {
+      border-radius: 10%;
+      height: 55vh;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.1);
+      background-position: center;
+      background-size: cover; }
+
+#bg-services {
+  background-color: rgba(0, 0, 0, 0.1); }
+  #bg-services .services-row .services-img {
+    border-radius: 50%;
+    border: 2px solid #209b20; }
+
+#bg-maps {
+  background-color: rgba(0, 0, 0, 0.1); }
+  #bg-maps .map #googleMap {
+    border-radius: 10px; }
+
+/*# sourceMappingURL=main.css.map */

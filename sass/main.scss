@@ -1,0 +1,44 @@
+@import "utils/mixins";
+@import "utils/variables";
+@import "utils/placeholders";
+
+/*
+* LANDING
+*/
+
+//jumbotron
+.jumbotron {
+	margin-bottom: 0;
+	height: 100vh;
+	@include background;
+	.container {
+		color: gray;
+		.presentation {
+			border-radius: 10%;
+			height: 55vh;
+			@include background($bg-presentation...); 
+		}
+	}
+}
+
+#bg-services {
+	background-color: fade-out(black, 0.9);
+	.services-row {
+		@extend %separator;	
+		.services-img {
+			border-radius: 50%;
+			border: 2px solid #209b20;
+		}
+	}
+}
+
+
+#bg-maps {
+	background-color: fade-out(black, 0.9);
+	.map {
+		@extend %separator;
+		#googleMap {
+			border-radius: 10px;
+		}
+	}
+}
