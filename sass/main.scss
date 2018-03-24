@@ -2,9 +2,6 @@
 @import "utils/variables";
 @import "utils/placeholders";
 
-/*
-* LANDING
-*/
 
 //jumbotron
 .jumbotron {
@@ -16,7 +13,7 @@
 		.presentation {
 			border-radius: 10%;
 			height: 55vh;
-			@include background($bg-presentation...); 
+			@include background($bg-presentation...);
 		}
 	}
 }
@@ -24,7 +21,7 @@
 #bg-services {
 	background-color: fade-out(black, 0.9);
 	.services-row {
-		@extend %separator;	
+		@extend %separator;
 		.services-img {
 			border-radius: 50%;
 			border: 2px solid #209b20;
@@ -60,7 +57,7 @@ $time: 0.4s;
 @include animation(up) {
   0%, 100% {
     transform: rotate(0);
-  } 
+  }
   50% {
     transform: rotate(-30deg);
   }
@@ -69,7 +66,7 @@ $time: 0.4s;
 @include animation(down) {
   0%, 100% {
     transform: rotate(0);
-  } 
+  }
   50% {
     transform: rotate(30deg);
   }
@@ -78,7 +75,7 @@ $time: 0.4s;
 @include animation(r-to-l) {
   100% {
     margin-left: -1px;
-  } 
+  }
 }
 
 @mixin use-animation($name, $time){
@@ -90,12 +87,12 @@ $time: 0.4s;
 
 
 .footer {
-	position: relative;	
-  height: 30vh;	
+	position: relative;
+  height: 30vh;
   background: #000;
   overflow: hidden;
   margin: 0;
-  
+
   .pacman:before, .pacman:after{
     content: '';
     position: absolute;
@@ -109,13 +106,13 @@ $time: 0.4s;
     border-radius: $height $height 0 0;
     @include use-animation(up, $time);
   }
-  
+
   .pacman:after {
     margin-top: -1px;
     border-radius: 0 0 $height $height;
     @include use-animation(down, $time);
-  } 
-  
+  }
+
   .dot{
     position: absolute;
     left: 50%;
@@ -134,4 +131,17 @@ $time: 0.4s;
                 150px 0 0 $grey;
     @include use-animation(r-to-l, $time);
   }
+}
+
+
+.title-cover{
+  margin-top: 5rem !important;
+}
+
+.l-margin-top{
+	margin-top: 3rem;
+}
+
+.l-margin-bottom{
+	margin-bottom: 3rem;
 }

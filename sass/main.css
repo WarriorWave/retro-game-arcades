@@ -2,9 +2,6 @@
 #bg-services .services-row, #bg-maps .map {
   margin-top: 8%; }
 
-/*
-* LANDING
-*/
 .jumbotron {
   margin-bottom: 0;
   height: 100vh;
@@ -133,5 +130,14 @@
     -moz-animation: r-to-l 0.4s infinite;
     -o-animation: r-to-l 0.4s infinite;
     animation: r-to-l 0.4s infinite; }
+
+.title-cover {
+  margin-top: 5rem !important; }
+
+.l-margin-top {
+  margin-top: 3rem; }
+
+.l-margin-bottom {
+  margin-bottom: 3rem; }
 
 /*# sourceMappingURL=main.css.map */
