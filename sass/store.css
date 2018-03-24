@@ -1,42 +1,39 @@
 /* bg presentation*/
 /* store */
-#bg-services .services-row, #bg-maps .map {
-  margin-top: 8%; }
+/*----------------------   STORE   ------------------------------*/
+:root {
+  --jumbotron-padding-y: 3rem; }
 
-/*
-* LANDING
-*/
-.jumbotron {
+.jum-store {
+  background-image: url("https://i.pinimg.com/originals/f7/8b/a6/f78ba6c4c4a2bd26e3e3b20dad46dd8a.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
-  height: 100vh;
-  background-image: url("https://render.fineartamerica.com/images/rendered/default/greeting-card/images-medium-5/1-arcade-game-with-illuminated-screen-allan-swart.jpg?&targetx=-180&targety=0&imagewidth=1060&imageheight=500&modelwidth=700&modelheight=500&backgroundcolor=FBFDFB&orientation=0");
-  background-repeat: no-repeat;
-  background-color: #5577ee;
-  background-position: center;
-  background-size: cover; }
-  .jumbotron .container {
-    color: gray; }
-    .jumbotron .container .presentation {
-      border-radius: 10%;
-      height: 55vh;
-      background-image: none;
-      background-repeat: no-repeat;
-      background-color: rgba(0, 0, 0, 0.1);
-      background-position: center;
-      background-size: cover; }
+  background-color: #fff; }
 
-#bg-services {
-  background-color: rgba(0, 0, 0, 0.1); }
-  #bg-services .services-row .services-img {
-    border-radius: 50%;
-    border: 2px solid #209b20; }
+@media (min-width: 768px) {
+  .jum-store {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2); } }
+.jum-store p:last-child {
+  margin-bottom: 0; }
+.jum-store .jumbotron-heading {
+  font-weight: 300; }
+.jum-store .container {
+  max-width: 35rem; }
 
-#bg-maps {
-  background-color: rgba(255, 0, 0, 0.1);
-  margin-bottom: 10%;
-  margin-top: 10%; }
-  #bg-maps .map #googleMap {
-    border-radius: 10px; }
+.footer-store {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .footer-store p {
+    margin-bottom: .25rem; }
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
 
 /*----------------------   PACMAN  -----------------------------*/
 @-webkit-keyframes up {
@@ -128,7 +125,7 @@
     margin-top: -5px;
     margin-left: 30px;
     border-radius: 50%;
-    background: #ccc;
+    background: white;
     z-index: 1;
     box-shadow: 30px 0 0 #ccc, 60px 0 0 #ccc, 90px 0 0 #ccc, 120px 0 0 #ccc, 150px 0 0 #ccc;
     -webkit-animation: r-to-l 0.4s infinite;
@@ -136,4 +133,4 @@
     -o-animation: r-to-l 0.4s infinite;
     animation: r-to-l 0.4s infinite; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=store.css.map */

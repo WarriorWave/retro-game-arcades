@@ -2,48 +2,50 @@
 @import "utils/variables";
 @import "utils/placeholders";
 
-/*
-* LANDING
-*/
 
-//jumbotron
-.jumbotron {
-	margin-bottom: 0;
-	height: 100vh;
-	@include background;
-	.container {
-		color: gray;
-		.presentation {
-			border-radius: 10%;
-			height: 55vh;
-			@include background($bg-presentation...); 
-		}
-	}
+/*----------------------   STORE   ------------------------------*/      
+
+:root {
+  --jumbotron-padding-y: 3rem;
 }
 
-#bg-services {
-	background-color: fade-out(black, 0.9);
-	.services-row {
-		@extend %separator;	
-		.services-img {
-			border-radius: 50%;
-			border: 2px solid #209b20;
-		}
-	}
+.jum-store {
+  @include background($bg-jum-store...);
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-
-#bg-maps {
-	background-color: fade-out(red, 0.9);
-  margin-bottom: 10%;
-  margin-top: 10%;
-	.map {
-		@extend %separator;
-		#googleMap {
-			border-radius: 10px;
-		}
-	}
+@media (min-width: 768px) {
+  .jum-store {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
 }
+
+.jum-store {
+    p:last-child {
+    margin-bottom: 0;
+    }
+    .jumbotron-heading {
+    font-weight: 300;
+    }
+    .container {
+      max-width: 35rem;
+    }
+  } 
+
+
+.footer-store {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  p {
+    margin-bottom: .25rem;
+  }
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 /*----------------------   PACMAN  -----------------------------*/
 
@@ -94,8 +96,8 @@ $time: 0.4s;
 
 
 .footer {
-	position: relative;	
-  height: 30vh;	
+  position: relative; 
+  height: 30vh; 
   background: #333;
   overflow: hidden;
   margin: 0;
@@ -129,7 +131,7 @@ $time: 0.4s;
     margin-top: - $height/10;
     margin-left: 30px;
     border-radius: 50%;
-    background: $grey;
+    background: white;
     z-index: 1;
     box-shadow: 30px 0 0 $grey,
                 60px 0 0 $grey,
